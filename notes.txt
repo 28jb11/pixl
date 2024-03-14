@@ -1,0 +1,25 @@
+* File/directory structure
+your-project/
+├── cmd/
+│   └── main.go                  # Entry point to start the web server
+├── internal/
+│   ├── handlers/
+│   │   └── ...                  # HTTP handlers for your application
+│   ├── models/
+│   │   └── ...                  # Database models
+│   └── ...                      # Other internal logic
+├── pkg/
+│   └── ...                      # Libraries/packages meant for external use
+├── templates/
+│   └── ...                      # Templ templates for dynamic HTML content
+├── public/
+│   ├── css/
+│   │   └── styles.css           # Generated Tailwind CSS
+│   ├── js/
+│   │   └── ...                  # JavaScript files, including HTMX enhancements
+│   └── ...                      # Other static files (images, fonts, etc.)
+└── db/
+    ├── migrations/
+    │   └── ...                  # Database migration scripts
+    └── seeds/
+        └── ...                  # Database seed data scripts
